@@ -1,0 +1,42 @@
+/* src/components/header.css */
+.header {
+  position: fixed; /* Tetap di atas saat discroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1); /* Transparansi latar belakang */
+  backdrop-filter: blur(10px); /* Efek blur pada latar belakang */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan ringan untuk efek 3D */
+  z-index: 1000; /* Pastikan header selalu di atas elemen lain */
+  transition: background 0.3s ease; /* Transisi halus untuk perubahan latar belakang */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Padding untuk header */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fff; /* Warna logo */
+}
+
+.nav {
+  display: flex;
+  gap: 15px; /* Jarak antara link navigasi */
+}
+
+.nav-link {
+  color: #fff; /* Warna link */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease; /* Transisi halus saat hover */
+}
+
+.nav-link:hover {
+  color: #ffd700; /* Warna saat hover */
+}

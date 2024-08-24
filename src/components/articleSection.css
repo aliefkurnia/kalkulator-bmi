@@ -1,0 +1,17 @@
+/* src/components/articleSection.css */
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 8px; /* Space between cards */
+  padding: 20px;
+  margin: 0 auto; /* Center grid */
+  max-width: 1200px; /* Set a max-width if needed */
+}
+
+.article-card {
+  max-width: 345px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
